@@ -1552,10 +1552,10 @@ a:hover, span:hover {
   text-transform: uppercase;
   letter-spacing: 4px;
   display: inline-block;
-  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: -webkit-gradient(linear, left top, right top, from(#c9d6da), color-stop(#4236df), to(#c9d6da));
+  background: -webkit-linear-gradient(left, #c9d6da, #4236df, #c9d6da);
+  background: -o-linear-gradient(left, #c9d6da, #4236df, #c9d6da);
+  background: linear-gradient(to right, #c9d6da, #4236df, #c9d6da);
   padding: 7px 12px;
   border-radius: 10px;
 }
