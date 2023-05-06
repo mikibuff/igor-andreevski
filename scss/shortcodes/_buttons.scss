@@ -17,11 +17,11 @@
 	}
 
 	&.bord{
-		border: 1px solid #fff;
+		border: 1px solid #000;
 
 		&:hover{
-			background: #fff;
-			color: #333;
+			background: #111;
+			color: #fff;
 		}
 	}
 
@@ -39,9 +39,11 @@
 
 	&.dark{
 		background: #222;
+		color: #fff;
 
 		&:hover{
-			background: #fff;
+			background: transparent;
+			border-color: #222;
 			color: #333;
 		}
 	}
@@ -65,6 +67,24 @@
 	}
 }
 
+[data-overlay-dark]{
+
+	.butn{
+
+		&.bord{
+			border-color: #fff;
+
+			&:hover{
+				background: #fff;
+				
+				span{
+					color: #111;
+				}
+			}
+		}
+	}
+}
+
 .simple-btn{
 	position: relative;
 	padding: 7px;
@@ -78,7 +98,7 @@
 		content: '';
 		width: 45%;
 		height: 100%;
-		background: rgba(255,255,255,.05);
+		background: rgba(0,0,0,.05);
 		position: absolute;
 		left: 0;
 		top: 0;

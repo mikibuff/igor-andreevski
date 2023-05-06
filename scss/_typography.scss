@@ -16,12 +16,11 @@ html {
 }
 
 body {
-    color: #fff;
-    background: #111215;
-    line-height: 1.5;
-    font-weight: 400;
-    overflow-x: hidden !important;
-    font-family: 'Poppins', sans-serif;
+  color: #111;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden !important;
+  font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -120,23 +119,6 @@ a, span{
   &.right{
     right: 0;
   }
-}
-
-.line-v{
-    position: absolute;
-    height: 80px;
-    width: 1px;
-    background: #c5a47e;
-    left: 50%;
-    opacity: .3;
-
-    &.top{
-        top: -30px;
-    }
-
-    &.bottom{
-        bottom: -30px;
-    }
 }
 
 /* ====================== [ End Typography  ] ====================== */

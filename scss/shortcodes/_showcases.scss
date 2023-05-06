@@ -186,50 +186,22 @@
                     display: inline-block;
                     color: transparent;
                     -webkit-text-stroke: 1px #fff;
+                    background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
     
                 span{
                     margin-left: auto;
                     color: transparent;
                     -webkit-text-stroke: 1px #fff;
+                    background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
 
-        .copy-cap{
-    
-            .cap{
-    
-                h1{
-    
-                    span{
-                        color: #fff;
-                        -webkit-text-stroke: 0;
-                    }
-            
-                    .stroke{
-                        color: #fff;
-                        -webkit-text-stroke: 0;
-                    }
-                }
-            }
-        }
-
-        .caption, .copy-cap{
-
-            h1{
-
-                .stroke{
-                    transform: skewX(0) translateX(0);
-                    opacity: 1;
-                }
-    
-                span{
-                    transform: skewX(0) translateX(0);
-                    opacity: 1;
-                }
-            }
-        }
     }
 }
 
@@ -327,6 +299,7 @@
     display: none;
     position: absolute;
     background-color: #111;
+    color: #fff;
     padding: 5px 10px;
     font-size: 13px;
     font-weight: 500;

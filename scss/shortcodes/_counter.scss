@@ -20,22 +20,6 @@
 			margin-bottom: 15px;
 		}
 	}
-
-    .container.sub-bg{
-        padding: 0 50px;
-        border-radius: 30px;
-        background: rgba(24,25,29,.5);
-        backdrop-filter: blur(10px);
-
-        .item{
-            padding: 50px 0;
-            border-right: 1px solid #0d0e0f;
-
-            &.no-bord{
-                border: 0;
-            }
-        }
-    }
 }
 
 .video{
@@ -120,6 +104,7 @@
                 min-width: 200px;
                 background: #272727;
                 margin-right: 30px;
+                color: #fff;
 
                 &:last-of-type{
                     background: #fff;

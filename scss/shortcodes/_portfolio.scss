@@ -10,7 +10,7 @@
 
 		.filter{
 			padding: 15px;
-			background: rgba(255, 255, 255, 0.02);
+			background: rgba(0, 0, 0, 0.04);
 			border-radius: 30px;
 			display: inline-block;
 		}
@@ -242,7 +242,7 @@
 				text-align: left;
 				padding: 30px;
 				padding-left: 0;
-				background: #232323;
+				background: #fff;
 				display: inline-block;
 				margin: 0;
 				position: relative;
@@ -276,7 +276,6 @@
 		}
 
 		span{
-			color: #eee;
 			font-size: 13px;
 			font-weight: 500;
 			letter-spacing: 1px;
@@ -335,7 +334,7 @@
 			right: 30px;
 			padding: 20px;
 			backdrop-filter: blur(7px);
-			background: rgba(12,15,22,.48);
+			background: rgba(255,255,255,.48);
 			border: 1px solid rgba(255, 255, 255, 0.3);
 			border-radius: 5px;
 			opacity: 0;
@@ -379,7 +378,6 @@
 		}
 
 		span{
-			color: #eee;
 			font-size: 13px;
 			letter-spacing: 1px;
 			text-transform: uppercase;
@@ -425,7 +423,7 @@
 				overflow: hidden;
 				position: relative;
 				transition: all .3s;
-				background: rgba(255, 255, 255, 0.02);
+				background: rgba(0, 0, 0, 0.04);
 				padding: 30px;
 				border-radius: 5px;
 
@@ -472,7 +470,7 @@
 
 				span{
 					padding: 8px 12px;
-					background: rgba(255, 255, 255, 0.04);
+					background: rgba(0, 0, 0, 0.04);
 					margin-right: 5px;
 					font-size: 12px;
 				}
@@ -719,7 +717,7 @@
 					left: 20px;
 					bottom: 20px;
 					right: 20px;
-					background: #18191d;
+					background: #fff;
 					opacity: 0;
 					transition: all .4s;
 				}
@@ -756,7 +754,7 @@
 		.cont{
 			position: absolute;
 			padding: 15px 30px;
-			background: #111215;
+			background: #fff;
 			bottom: 0;
 			left: 50%;
 			transform: translateX(-50%);
@@ -926,6 +924,27 @@
 	}
 }
 
+.half-bg{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background: $sub-bg;
+	z-index: 1;
+
+	&.bottom{
+		bottom: 0;
+	}
+
+	&.top{
+		top: 0;
+	}
+
+	&.not-sub{
+		background: #0c0f16;
+	}
+}
+
 .case-study{
 	position: relative;
 
@@ -992,27 +1011,6 @@
 	}
 }
 
-.half-bg{
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 200px;
-	background: $sub-bg;
-	z-index: 1;
-
-	&.bottom{
-		bottom: 0;
-	}
-
-	&.top{
-		top: 0;
-	}
-
-	&.not-sub{
-		background: #0c0f16;
-	}
-}
-
 .works{
 
 	.lg-space{
@@ -1060,7 +1058,7 @@
                 .stroke{
                     display: inline-block;
                     color: transparent;
-                    -webkit-text-stroke: 1px #fff;
+                    -webkit-text-stroke: 1px #111;
                 }
             }
         }

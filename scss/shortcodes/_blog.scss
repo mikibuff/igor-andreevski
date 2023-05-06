@@ -50,7 +50,6 @@
 
         .btn-more{
             margin-top: 15px;
-			color: #eee;
 
             a{
                 font-size: 12px;
@@ -209,7 +208,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: #18191d;
+			background: #f5f5f5;
 			transition: all .4s;
 		}
 
@@ -356,7 +355,7 @@
 		display: flex;
 		padding-bottom: 30px;
 		margin-bottom: 50px;
-		border-bottom: 1px solid rgba(255,255,255,.2);
+		border-bottom: 1px solid rgba(100,100,100,.2);
 
 		&:last-of-type{
 			margin-bottom: 0;
@@ -555,7 +554,7 @@
 				}
 
 				.quotes{
-					background: rgba(255,255,255,.02);
+					background: rgba(0,0,0,.04);
 					padding: 30px;
 					margin: 30px 0;
 					
@@ -601,7 +600,7 @@
 			.author{
 				padding: 30px;
 				margin-top: 40px;
-				background: rgba(255,255,255,.02);
+				background: rgba(0,0,0,.04);
 				
 				.author-img{
 					display: table-cell;
@@ -642,15 +641,15 @@
 
 		.pagination{
 			margin-top: 80px;
-			border-top: 1px solid rgba(255,255,255,.1);
-			border-bottom: 1px solid rgba(255,255,255,.1);
+			border-top: 1px solid rgba(0,0,0,.1);
+			border-bottom: 1px solid rgba(0,0,0,.1);
 			display: flex;
 
 			span{
 				width: 100%;
 				padding: 20px;
-				border-right: 1px solid rgba(255,255,255,.1);
-				border-left: 1px solid rgba(255,255,255,.1);
+				border-right: 1px solid rgba(0,0,0,.1);
+				border-left: 1px solid rgba(0,0,0,.1);
 				text-transform: uppercase;
 				font-weight: 500;
 				font-size: 13px;
@@ -669,7 +668,7 @@
 			.item{
 				padding: 30px 0;
 				margin: 30px 0;
-				border-bottom: 1px solid rgba(255,255,255,.1);
+				border-bottom: 1px solid rgba(0,0,0,.1);
 
 				&.relped{
 					margin-left: 100px;
@@ -730,7 +729,7 @@
 					color: #fff;
 					width: 100%;
 					padding: 17px;
-					background: rgba(255,255,255,.02);
+					background: rgba(0,0,0,.05);
 					border: 0;
 				}
 

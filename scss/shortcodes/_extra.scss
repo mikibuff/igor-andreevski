@@ -83,6 +83,7 @@
 }
 
 .loading{
+	color: #fff;
 	position: fixed;
 	left: 50%;
 	top: calc(50% - 40px);
@@ -190,6 +191,10 @@
 
 /* ====================== [ Start Cursor Style ] ====================== */
 
+body{
+	cursor: none;
+}
+
 .mouse-cursor { 
 	position: fixed;
 	left: 0;
@@ -200,6 +205,8 @@
 	visibility: hidden;
 }
 .cursor-inner { 
+	margin-left: 2px; 
+	margin-top: 2px;
 	width: 6px; 
 	height: 6px; 
 	z-index: 10000001;
@@ -210,18 +217,18 @@
 				opacity .3s ease-in-out;
 }
 .cursor-inner.cursor-hover { 
-	margin-left: -35px;
-	margin-top: -35px;
-	width: 70px;
-	height: 70px;
+	margin-left: -40px;
+	margin-top: -40px;
+	width: 80px;
+	height: 80px;
 	background-color: $main-color;
 	opacity: .3;
 }
 .cursor-outer { 
-	margin-left: -12px;
-	margin-top: -12px; 
-	width: 30px;
-	height: 30px; 
+	margin-left: -15px;
+	margin-top: -15px; 
+	width: 40px;
+	height: 40px; 
 	border: 1px solid $main-color;
 	box-sizing: border-box;
 	z-index: 10000000;
@@ -296,49 +303,50 @@
 /* ====================== [ Start animate headline ] ====================== */
   
 .cd-words-wrapper {
-display: inline-block;
-position: relative;
-text-align: left;
-}
-
-.cd-words-wrapper b {
-display: inline-block;
-position: absolute;
-white-space: nowrap;
-left: 0;
-top: 0;
-}
-
-.cd-words-wrapper b.is-visible {
-position: relative;
-}
-
-.no-js .cd-words-wrapper b {
-opacity: 0;
-}
-
-.no-js .cd-words-wrapper b.is-visible {
-opacity: 1;
-}
-
-
-/* xclip */
-
-.cd-headline.clip span {
-display: inline-block;
-}
-
-.cd-headline.clip .cd-words-wrapper {
-overflow: hidden;
-vertical-align: top;
-}
-
-.cd-headline.clip b {
-opacity: 0;
-}
-
-.cd-headline b.is-visible {
-opacity: 1;
-}
-
-/* ====================== [ End animate headline ] ====================== */
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	}
+	
+	.cd-words-wrapper b {
+	display: inline-block;
+	position: absolute;
+	white-space: nowrap;
+	left: 0;
+	top: 0;
+	}
+	
+	.cd-words-wrapper b.is-visible {
+	position: relative;
+	}
+	
+	.no-js .cd-words-wrapper b {
+	opacity: 0;
+	}
+	
+	.no-js .cd-words-wrapper b.is-visible {
+	opacity: 1;
+	}
+	
+	
+	/* xclip */
+	
+	.cd-headline.clip span {
+	display: inline-block;
+	}
+	
+	.cd-headline.clip .cd-words-wrapper {
+	overflow: hidden;
+	vertical-align: top;
+	}
+	
+	.cd-headline.clip b {
+	opacity: 0;
+	}
+	
+	.cd-headline b.is-visible {
+	opacity: 1;
+	}
+	
+	/* ====================== [ End animate headline ] ====================== */
+	

@@ -29,7 +29,7 @@ $(function () {
         onPageChange: null,       // function(pageIndex) that is called when page is changed
         topOffset: -80            // offste (in px) for fixed top navigation
     });
-    
+
 
     wind.on("scroll", function () {
 
@@ -361,6 +361,68 @@ $(function () {
     });
 
 
+    var swiperScreenApp = new Swiper('.secreen-shots .swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        speed: 1000,
+        loop: true,
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            640: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+                centeredSlides: false,
+            },
+            991: {
+                slidesPerView: 5,
+            }
+        },
+
+        pagination: {
+            el: '.secreen-shots .swiper-pagination',
+            clickable: true,
+        },
+
+    });
+
+    var swiperTestimApp = new Swiper('.app-testim .swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        speed: 1000,
+        loop: true,
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            767: {
+                slidesPerView: 2,
+                centeredSlides: false,
+            },
+            991: {
+                slidesPerView: 3,
+            }
+        },
+
+        pagination: {
+            el: '.app-testim .swiper-pagination',
+            clickable: true,
+        },
+
+    });
+
+
     /* ===============================  Var Background image  =============================== */
 
     var pageSection = $(".bg-img, section");
@@ -497,6 +559,23 @@ $(function () {
     $('.number-sec .count').countUp({
         delay: 10,
         time: 500
+    });
+
+
+    /* ===============================  accordion  =============================== */
+
+    $(".accordion").on("click", ".title", function () {
+
+        $(this).next().slideDown();
+
+        $(".accordion-info").not($(this).next()).slideUp();
+
+    });
+
+    $(".accordion").on("click", ".item", function () {
+
+        $(this).addClass("active").siblings().removeClass("active");
+
     });
 
 
@@ -755,6 +834,7 @@ $(window).scroll(function () {
         'opacity': 1 - scrolled / 600
     });
 
+
 });
 
 
@@ -910,3 +990,7 @@ $('[data-carousel="swiper"]').each(function () {
         var init = new Swiper(initID, conf);
     };
 });
+
+
+
+

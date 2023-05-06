@@ -13,7 +13,7 @@
 		text-align: left;
 		padding: 80px 40px;
 		transform: scale(.8);
-		background: linear-gradient(126.47deg,#18191d 6.69%,rgba(2,2,30,0) 85.43%);
+		background: linear-gradient(126.47deg,#ccc 6.69%,rgba(2,2,30,0) 85.43%);
 		transition: all .4s;
 		display: flex;
 
@@ -22,25 +22,21 @@
 		}
 
 		p{
-			color: #fff;
+			color: #111;
 			font-size: 28px;
 			font-weight: 600;
 			padding-left: 30px;
 			margin-left: 30px;
-			border-left: 1px solid rgba(255,255,255,.1);
+			border-left: 1px solid rgba(0,0,0,.1);
 		}
 
 		.info{
 			min-width: 120px;
 
-			&.inf-lrg{
-				min-width: 160px;
-			}
-
 			.img{
 				width: 80px;
 				height: 80px;
-				border: 7px solid #25262c;
+				border: 7px solid #eee;
 				border-radius: 50%;
 				overflow: hidden;
 				margin-bottom: 20px;

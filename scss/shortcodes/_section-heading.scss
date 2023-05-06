@@ -16,7 +16,7 @@
 
 	h3{
 		font-size: 48px;
-		font-weight: 500;
+		font-weight: 600;
 	}
 
 	h2{
@@ -81,6 +81,24 @@
 	i{
 		margin-left: 10px;
 	}
+}
+
+
+.line-v {
+    position: absolute;
+    height: 80px;
+    width: 1px;
+    background: #c5a47e;
+    left: 50%;
+    opacity: .3;
+}
+
+.line-v.top {
+    top: -30px;
+}
+
+.line-v.bottom {
+    bottom: -30px;
 }
 
 

@@ -2,90 +2,90 @@
 
 body{
 	font-family: 'Open Sans', sans-serif;
-	background: #232323;
-  }
+	background: #fff;
+}
   
-  h1, h2, h3, h4, h5, h6, .custom-font {
+h1, h2, h3, h4, h5, h6, .custom-font {
 	font-family: 'Khand', sans-serif;
-  }
+}
   
-  p {
+p {
 	color: #999;
 	font-size: 14px;
 	font-weight: 400;
-  }
+}
   
-  .navbar {
+.navbar {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
+}
   
-  .nav-scroll {
-	background: #232323;
-  }
+.nav-scroll {
+	background: #fff;
+}
   
-  .navbar .dropdown-menu {
-	background: #2a2a2a;
-  }
+.navbar .dropdown-menu {
+	background: #fff;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
   
-  .navbar .navbar-nav .dropdown-item:hover,
-  .main-color,
-  .progress-wrap::after{
+.navbar .navbar-nav .dropdown-item:hover,
+.main-color,
+.progress-wrap::after,
+.nav-scroll .navbar-collapse .active,
+.light .navbar-collapse .active{
 	color: #c5a47e !important;
-  }
+}
   
-  .navbar .dropdown-menu .dropdown-item:after, 
-  .back-color,
-  .line,
+.navbar .dropdown-menu .dropdown-item:after, 
+.back-color,
+.line,
   .cursor-inner,
   .pace .pace-progress{
 	background: #c5a47e !important;
-  }
+}
 
-  .cursor-outer{
+.cursor-outer,
+.testimonials .arrows .next:hover, .testimonials .arrows .prev:hover{
       border-color: #c5a47e !important;
-  }
+}
   
-  .main-content {
-	background: #232323;
-  }
+.main-content {
+	background: #fff;
+}
   
-  .color-font {
+.color-font {
 	color: #c5a47e;
 	-webkit-text-fill-color: #c5a47e;
 	background: none;
-  }
+}
 
-  .progress-wrap svg.progress-circle path{
+.progress-wrap svg.progress-circle path{
       stroke: #c5a47e;
-  }
+}
   
-  .sub-bg {
+.sub-bg {
 	background: #1f1f1f;
-  }
+}
   
-  .line {
+.line {
 	opacity: .1;
-  }
+}
   
-  .testimonials .item {
+.testimonials .item {
 	background: transparent;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-  }
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
   
-  .testimonials .arrows .next, .testimonials .arrows .prev {
-	border-color: rgba(255, 255, 255, 0.3);
+.testimonials .arrows .next, .testimonials .arrows .prev {
+	border-color: rgba(0, 0, 0, 0.3);
 	border-radius: 0;
-  }
+}
   
-  .team .item.cir .img:after {
+.team .item.cir .img:after {
 	display: none;
-  }
+}
 
-
-
-
-
-  @media screen and (max-width: 991px){
+@media screen and (max-width: 991px){
 
   .navbar .navbar-collapse {
       max-height: 340px;
@@ -93,6 +93,10 @@ body{
       background: #262626;
       text-align: center;
       padding: 10px 15px;
+  }
+
+  .navbar .dropdown-menu{
+    background: #232323;
   }
 
   .nav-scroll .navbar-collapse .active,

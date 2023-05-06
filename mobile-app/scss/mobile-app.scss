@@ -46,7 +46,7 @@
 
 
 
-$body-color: #fff;
+$body-color: #0f0f1e;
 $main-color: rgb(18, 194, 233);
 $dark-shadow: 0px 10px 40px -4px rgba(76,76,76,.1); 
 $mobile-xs-screen: 480px;
@@ -93,7 +93,7 @@ body{
   }
   
   p {
-    color: #9b9b9b;
+    color: $body-color;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.8;
@@ -116,7 +116,7 @@ body{
       top: 0;
       width: 20px;
       height: 20px;
-      border: 1px solid #fff;
+      border: 1px solid #0f0f1e;
       border-radius: 50%;
 
       &:after{
@@ -142,7 +142,7 @@ body{
   }
 
   .bg-gray{
-    background: #202123;
+    background: #f8f9fc;
   }
 
   .bg-dark{
@@ -182,13 +182,6 @@ body{
 
     h1{
       font-size: 70px;
-    }
-
-    .buton{
-
-      svg{
-        fill: #fff;
-      }
     }
   }
 }
@@ -237,7 +230,7 @@ body{
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #131416;
   cursor: pointer;
 }
 
@@ -258,10 +251,6 @@ body{
   padding: 15px 30px;
   font-weight: 600;
 
-  svg{
-    fill: #fff;
-  }
-
   &.butn-gr{
     background-color: #f45162;
     background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
@@ -273,16 +262,16 @@ body{
     }
 
     &:hover{
-      background: #f45162;
+      background: #0f0f1e;
     }
   }
 
   &.butn-gray{
-    background: #252527;
+    background: #edf3ff;
     transition: all .4s;
 
     &:hover{
-      background: #f45162;
+      background: #0f0f1e;
       color: #fff;
 
       svg{
@@ -292,7 +281,7 @@ body{
   }
 
   &.butn-bord-dark{
-    border: 1px solid #fff;
+    border: 1px solid #0f0f1e;
   }
 
   &.butn-bord-red{
@@ -337,12 +326,11 @@ body{
 }
 
 .butn-more{
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #0f0f1e;
   font-weight: 600;
 
   svg{
     width: 6px;
-    fill: #fff;
   }
 }
 
@@ -507,7 +495,7 @@ body{
       
       .item{
         padding: 17px 25px;
-        border: 1px solid rgba(255,255,255,.1);
+        border: 1px solid rgba(76,76,76,.1);
         border-radius: 7px;
 
           .title{
@@ -541,7 +529,7 @@ body{
 
   .item.active{
       display: block;
-      background: #252527;
+      background: #fff;
       box-shadow: 0px 10px 60px rgba(76,76,76,.1);
       border-color: transparent;
   }
@@ -557,9 +545,10 @@ body{
 
   .item{
     padding: 40px;
+    box-shadow: 0 10px 50px rgba(76,76,76,.05);
     border-radius: 10px;
     border: 1px solid transparent;
-    background: #252527;
+    background: #fff;
     position: relative;
     transition: all .4s;
     z-index: 3;
@@ -577,7 +566,7 @@ body{
       content: '';
       position: absolute;
       border-radius: 5px;
-      background: #252527;
+      background: #fff;
       z-index: -1;
     }
 
@@ -642,7 +631,7 @@ body{
   .item{
     padding: 40px;
     border-radius: 10px;
-    border: 1px solid rgba(255,255,255,.1);
+    border: 1px solid rgba(76,76,76,.1);
     position: relative;
     transition: all .4s;
     z-index: 3;
@@ -660,7 +649,7 @@ body{
       content: '';
       position: absolute;
       border-radius: 10px;
-      background: #111215;
+      background: #fff;
       z-index: -1;
     }
 
@@ -821,7 +810,7 @@ body{
 
   .filter{
     padding: 15px 30px;
-    border: 1px solid rgba(255,255,255,.1);
+    border: 1px solid rgba(76,76,76,.1);
     border-radius: 5px;
     text-align: center;
     margin-bottom: 30px;
@@ -934,7 +923,7 @@ body{
 
     &.active{
       border-color: transparent;
-      background: #202123;
+      box-shadow: 0px 10px 60px rgba(76,76,76,.1);
     }
 
     .amount{
@@ -951,7 +940,7 @@ body{
           position: absolute;
           left: -20px;
           top: 14px;
-          color: #fff;
+          color: #0f0f1e;
           font-size: 25px;
         }
       }
@@ -972,7 +961,7 @@ body{
       }
 
       li{
-        color: #9b9b9b;
+        color: #555;
         margin-top: 15px;
 
         &.disbl{
@@ -1009,7 +998,7 @@ body{
 
   .item{
     padding: 60px;
-    background: #131416;
+    background: #fff;
     border: 1px solid transparent;
     text-align: center;
     position: relative;
@@ -1029,7 +1018,7 @@ body{
       left: 0px;
       right: 0px;
       bottom: 0px;
-      background: #131416;
+      background: #fff;
       z-index: -1;
     }
 
@@ -1142,7 +1131,8 @@ body{
 
   .item{
     border-radius: 10px;
-    background: #252527;
+    box-shadow: 0px 10px 50px rgba(76,76,76,.1);
+    background: #fff;
     overflow: hidden;
     transition: all .3s;
 
@@ -1237,8 +1227,7 @@ body{
 
         input{
           padding: 15px 60px 15px 15px;
-          border: 1px solid rgba(255,255,255,.1);
-          background: transparent;
+          border: 1px solid rgba(76,76,76,.1);
           border-radius: 5px;
           width: 100%;
         }
@@ -1263,7 +1252,7 @@ body{
 
     .box{
       padding: 30px;
-      border: 1px solid rgba(255,255,255,.1);
+      border: 1px solid rgba(76,76,76,.1);
       border-radius: 5px;
     }
 
@@ -1305,7 +1294,7 @@ body{
       a{
         font-size: 13px;
         padding: 10px 15px;
-        background: rgba(255,255,255,.06);
+        background: rgba(76,76,76,.06);
         border-radius: 4px;
         margin: 4px 2px;
 
@@ -1325,10 +1314,8 @@ body{
       .filter-select{
 
         select{
-          background: #111215;
-          color: #fff;
           padding: 10px;
-          border: 1px solid rgba(255,255,255,.1);
+          border: 1px solid rgba(76,76,76,.1);
           border-radius: 5px;
         }
       }
